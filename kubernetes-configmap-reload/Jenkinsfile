@@ -32,7 +32,7 @@ pipeline {
 			}
     		steps {
         		dir("${params.AppName}") {
-        			'mvn clean package'
+        			bat 'mvn clean package'
         		}
     		}
 	    }
